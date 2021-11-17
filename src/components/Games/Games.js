@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import api from "../../services/api";
 import './game.css';
+import {Link} from "react-router-dom";
 
 const Games = () => {
     const [games, setGames] = useState([]);
@@ -31,7 +32,14 @@ const Games = () => {
                         <img src={game.box_art_url} alt="jeu profile pic" className="imgCarte"/>
                         <div className="cardBodyGames">
                             <h5 className="titreCartesGames">{game.name}</h5>
-                            <div className="btnCarte">Regarder {game.name}</div>
+                            <Link className="lien" to={{
+                                pathname: 'game/'+game.name,
+                                state: {
+                                gameID: game.id
+                                }
+                            }}>
+                                <div className="btnCarte">Regarder {game.name}</div>
+                            </Link>
                         </div>
                     </div>
                 ))}
