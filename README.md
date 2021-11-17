@@ -1,3 +1,11 @@
+
+# cette application est un clone de twitch 
+
+# Images du projet :
+![image](https://user-images.githubusercontent.com/56023123/142202252-338124c0-aecd-4d85-9d32-563265a31235.png)
+![image](https://user-images.githubusercontent.com/56023123/142202378-d3674439-509c-46d4-bd14-a06e04160765.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
